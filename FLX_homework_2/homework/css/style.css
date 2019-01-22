@@ -1,0 +1,170 @@
+@media screen {
+.tm-nav-item{
+  color: #e7e7e7;
+  font-size: 0.7em;
+}
+section>.tm-content-box{
+  display: flex;
+  align-items: center;
+}
+.tm-team-description-container{
+  flex-basis: 360px;
+  max-width: 100%;
+}
+.tm-section-title-box:hover{
+  background-color: #87CEFA;
+  color: #ffffff;
+  font-weight: bold;
+}
+p:first-letter{
+  color : #87CEFA;
+  font-size : 30px;
+}
+.tm-sidebar, .tm-content-box, .blocks{
+  box-shadow : 0 0 10px rgba(50, 50, 50, 1);
+}
+.tm-banner {
+  border: 30px solid #F5F5F5;
+  padding: 0;
+}
+.tm-content-box {
+  position: relative;
+}
+.tm-content-box::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-top: 30px solid #87CEFA;
+  border-right: 250px solid transparent;
+  z-index: 5;
+}
+.carousel-content h2 {
+  color : gainsboro;
+  letter-spacing: 5px;
+}
+h2 + p {
+  font-style : italic;
+}
+p:not(.tm-banner-text) {
+  line-height : 220%;
+  text-indent : 30px;
+}
+.heading h2{
+  color : #87CEFA;
+  text-align : center;
+}
+ol li .text:after{
+  display: inline-block;
+  content : "New";
+  vertical-align : text-top;
+  color : #FF0000;
+  font-size : 10px;
+}
+ol a:link{
+  color: #000000;	
+  text-decoration:none;
+}
+ol a:visited{
+  color: #000000;	
+  text-decoration: underline;
+}
+ol a:hover{
+  color : #87CEFA;
+  text-decoration:underline double;
+}
+.blocks .box:nth-child(2n){
+  background:#F2F2F2;
+}
+.blocks p::first-letter{
+  color : #000000;
+}
+.blocks p{
+  text-indent : 0px;
+  line-height : 150%;
+  font-size : 143%;
+  color: #686868;
+}
+.blocks h2{
+  font-size : 300%;
+  line-height : 120%;
+}
+.blocks .box{
+  padding: 10px;
+}
+.box h2{
+  font-size : 200%;
+}
+.box p {
+  font-size: 100%;
+}
+.mandatory-field:after {
+  content: "*";
+  color : red;
+  font-weight: bold;
+}
+button[type="submit"] {
+  width: 15%;
+  height: 50px;
+  color : #31b0d5;
+  background: #ffffff;
+  border: 2px solid #8bd0fa;
+  border-radius: 0px;
+  margin-left: 85%;
+}
+button[type="submit"]:hover {
+  color : #ffffff;
+  background: #9fd8fb;
+  border: 2px solid #8bd0fa;
+}
+
+.tm-nav-item:hover{
+  background: #f5f5f5;
+}
+}
+@media print {
+
+body{
+  padding-top: 0;
+}
+.tm-sidebar, #about, section:not(:first-of-type){
+  display: none;
+}
+.tm-main-content{
+  margin: 0;
+}
+.tm-banner{
+  height: 200px;
+  padding: 0 0 0 20px;
+}
+section>.tm-content-box{
+  display: flex;
+  align-items: center;
+}
+.flex-item:first-child{
+  max-width: 100%;
+  text-align: left;
+}
+.flex-item:last-child {
+  max-width: 35%;
+  text-align: center;
+}
+.padding-medium h2{
+  color: #2c2cff;
+  font-size : 40px;
+}
+.padding-medium p{
+  line-height : 220%;
+  text-indent : 30px;
+  font-size: 110%;
+}
+h2 + p {
+  font-style : italic;
+}	
+p:first-letter{
+  color : #87CEFA;
+  font-size : 30px;
+}
+}
