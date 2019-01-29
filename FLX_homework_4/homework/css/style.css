@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 900px;
+  background-color: #F3F3F3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;}
+
+header{
+  background: url(../img/sample2.jpg) no-repeat bottom/cover;
+  height: 100vh;
+  width: 100vw;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr;
+  align-content: center;}
+
+.logo p {
+  text-transform: uppercase;}
+
+.top-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: start;
+  padding: 30px;}
+
+.top-wrapper nav {
+  display: grid;
+  grid-template-columns: auto auto;}
+  
+.top-wrapper nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-right: 50px;}
+  
+header section {
+  text-align: center;
+  padding: 200px 0;}
+	
+header section h1 {
+  letter-spacing: 0.2em;
+  font-size: 3em; 
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;}		
+
+header section h1 span{
+font-size: 1.8em;}
+
+.bottom-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;}
+
+.bottom-wrapper nav a {
+  display: inline-block;
+  margin: 0 140px;
+  background-color: rgba(158,158,158,0.5);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #FFFFFF;}
+
+main .intro{
+  position: relative;
+  font-size: 11px;}
+	
+main .intro .triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 200px solid #000000; 
+  border-left: 1280px solid transparent;}
+
+main .intro .first{
+	position: absolute;
+	left: 650px; 
+	top: 0px;
+	color: #FFFFFF;
+	z-index: 5;}
+
+main .intro .second{
+	position: absolute;
+	left: 30px; 
+	top: 100px;
+	color: #000000;}
+	
+main .intro h2{
+  text-align:center;
+  font-weight: normal;
+  font-size: 2em;}
+
+.two-column{
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.img-carrier{
+  background: url(../img/sample.jpg) no-repeat top/cover;
+  position: relative;
+  height: 200px;}
+
+.like{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFFFFF;
+  padding: 3px 5px;}
+
+.where{
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #FFFFFF;}
+
+.text-carrier{
+  margin-top: 10px;
+  padding-left: 30px;
+  text-align: center;}
+
+.explore{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 150px;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 20px 100px 50px 100px;}
+
+.explore div{
+  padding: 20px;
+  border: 1px solid #F3F3F3;
+  box-shadow : 0 0 10px rgba(50, 50, 50, 1);
+  font-size: 0.8em;}
+
+.explore div a{
+  display: block;
+  background-color: #097774;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  width: 97%;
+  margin-top: 15px;
+  padding: 7px;
+  text-align: center;}
+
+.subscibe{
+  padding: 40px 20px 60px 20px;
+  position: relative;}
+
+.subscibe p{
+  font-size: 0.8em;
+  padding-bottom: 10px;}
+
+form{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;}
+
+label{
+  font-size: 1.4em}
+
+input[type=email]{
+  border: 1px solid #000000;
+  padding: 8px;
+  font-size: 0.8em;}
+
+input::placeholder{
+  color: #000000;}
+
+input[type=submit]{
+  color: #FFFFFF;
+  background-color: #097774;
+  border: none;
+  padding: 8px;
+  font-weight: bold;}
+
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  background-color: #FFFFFF;
+  padding: 50px 0;}
+
+.info div{
+  padding: 10px 10px 10px 20px;}
+
+.info div:last-child{
+  position: relative;}
+	
+.info p{
+  color:#9E9E9E;
+  padding: 5px 0;}
+
+.info p.hours{
+  color: #F0F0F0;}
+
+footer{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  border-top: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+  padding: 10px;
+  font-size: 0.8em;}
+
+footer div{
+  color:#9E9E9E;}
+
+footer nav a{
+  color: #000000 ;
+  text-decoration: none;
+  padding-left: 20px; 
+}
