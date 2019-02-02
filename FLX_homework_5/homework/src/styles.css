@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;}
+
+body{
+  box-sizing: border-box;
+  font-family: roboto;
+  background-color: #0b192f;
+  max-width: 1400px;}
+
+.wrapper{
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-rows: auto auto auto;}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162b4d;
+  padding-top: 20px;
+  margin-bottom: 20px;}
+
+header span{
+color: red;}
+
+.menu{
+  font-size: 1px;
+  display: none;
+  color:#FFFFFF;
+  text-align: center;}
+
+.list{  
+  display: flex;  
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-right:30px;}
+  
+.list-item{
+  padding: 30px 20px;
+}
+
+.list-item a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+
+.list-item:hover{
+  background-color: rgb(184,184,184,0.3);
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 4vw;
+  text-align: left;
+  font-weight: 100;
+}
+
+.main-wrapper{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 20px;} 
+
+.blog{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.blog:nth-child(even){
+  flex-direction: row-reverse;}
+
+.blog:nth-child(odd) .text-block{
+	padding: 30px;
+	text-align: left;}
+
+.blog:nth-child(even) .text-block{
+	padding: 30px;
+	text-align: right;}
+
+.post-1 {
+  background: #B71757;}
+
+.post-2 {
+  background: #0D7E71;}
+
+.post-3 {
+  background: #b1660e;}
+
+.post-4 {
+  background: #d12767;}
+
+.post-5 {
+  background: #2d95bb;}
+
+.text-block{
+  padding: 20px;}  
+
+.text-block h2{
+  color: #FFFFFF;
+  font-size: 3.5vw;
+  line-height: 1;
+  font-weight: 100;
+  margin-bottom: 10px;}
+
+.text-block p{
+  color: #FFFFFF;
+  font-size: 0.9vw;
+  line-height: 1.7;
+  opacity: 0.5;}
+
+.date{
+  color: #FFFFFF;
+  font-size: 4vw;
+  opacity: 0.3;
+  font-weight: 100;
+  line-height: 0.7;
+  padding: 20px 10px;}
+
+.date span{
+	font-size: 0.6em;}
+
+.blog img{
+  width: 50%;
+  height: 100%;
+  object-fit: contain;}
+
+.blog img:hover, .text-block h2:hover{
+  opacity: 0.5;
+  cursor: pointer;}
+	
+.last-blog{
+  display: flex;
+  justify-content: space-between;}
+aside img{
+  width: 100%;}
+	
+aside > div{
+  background-color: #FFFFFF;
+  margin-bottom: 20px;}
+  
+.news-block{
+  padding: 30px 20px;}
+
+.news-block p{
+  font-size: 0.9vw;
+  color: #6e7fa2;
+  line-height: 1.7;}
+  
+.news-block h3{
+  color: #000000;
+  font-size:2.5vw;
+  font-weight: 100;
+  margin-bottom: 10px;}
+  
+footer{
+	background-color: #162b4d;
+	color: #FFFFFF;
+	opacity: 0.5;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1vw;
+	padding: 20px;}
+	
+footer > p{
+	margin-left: auto;
+}
+	
+@media (max-width: 768px){
+.menu{
+  display: block;
+  font-size: 1.5em;
+  font-weight: 100;}
+  
+.wrapper{
+  width: 95%;}
+  
+.main-wrapper{
+  grid-template-columns: 1.5fr 1fr;
+  grid-column-gap: 15px;}
+  
+header{
+  justify-content: center;
+  display: block;}
+  
+.list {
+  display: none;}
+ 
+h1{
+  padding: 40px 0;
+  font-size: 2em;
+  text-align: center;}
+  
+.text-block h2{
+  font-size: 2em;}
+  
+.text-block p{
+  font-size:0.6em;
+  line-height: 1.5;}
+  
+.date{
+  font-size: 2em;}
+	
+.news-block h3{
+  font-size: 1.3em;}
+  
+.news-block  p{
+  font-size: 0.6em;}
+
+.blog:nth-child(odd), .blog:nth-child(even), .last-blog{
+  flex-direction: column;}
+  
+.blog img{
+  width: 100%;}
+  
+.blog, .last-blog{
+  align-items: center;}
+.blog:nth-child(even) .text-block{
+  text-align: left;}
+  
+.last-blog .text-block{
+  padding: 20px;}
+	
+footer{
+  flex-direction: column;  
+  justify-content: center;  
+  font-size: 0.6em;}
+  
+footer p{
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  opacity: 0.3;}	
+  
+footer > p{
+  margin: auto;}
+}
+
+@media (max-width: 480px){
+.main-wrapper{
+  grid-template-columns: 1fr;}
+  
+h1{
+  font-size: 2em;}
+  
+.text-block h2 {
+  font-size: 2.75em;}
+  
+.text-block p{
+  font-size:0.9em;
+  line-height: 1.5;}
+  
+.date{
+  font-size: 2.5em;}
+  
+.news-block  p{
+  font-size:0.8em;}
+  
+.news-block h3{
+  font-size: 1.5em;}
+  
+footer{
+  font-size: 0.9em;}
+}
