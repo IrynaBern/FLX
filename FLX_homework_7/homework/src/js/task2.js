@@ -12,7 +12,6 @@ if (game) {
     let gamePrize = initPrize;
     while(game) {
         secretNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log(secretNumber);// згенероване випадкове число
         let currentPrize = maxPrize;
         let continueGame = false;
          for (let i = 1; i <= attempts; i++) {
@@ -23,7 +22,6 @@ if (game) {
                 Possible prize on current attempt: ${currentPrize}`, '');
             if(numberGame !== '' && numberGame !== null && !isNaN(numberGame = Number(numberGame))) {
                 numberGame = parseFloat(numberGame);
-                console.log(numberGame);
                 if(Number.isInteger(numberGame) && numberGame === secretNumber) {
                     gamePrize += currentPrize;
                     game = confirm(`Congratulation! Your prize is: ${gamePrize}\nDo you want continue?`);
@@ -37,7 +35,7 @@ if (game) {
             } 
             currentPrize = Math.floor(currentPrize / 2);
         }
-        if(!continueGame){
+        if(!continueGame) {
             alert(`Thank you for a game. Your prize is: ${gamePrize}`);
             game = confirm(`Do you want to play again?`); 
             if(game){
